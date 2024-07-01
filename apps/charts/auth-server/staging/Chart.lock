@@ -1,0 +1,6 @@
+dependencies:
+- name: auth-server
+  repository: file://../../../../charts/auth-server
+  version: 0.1.0
+digest: sha256:cf6491b396b4027741288a04f1f8015ceddfc499cd2367fb1abfb4a62a78d5aa
+generated: "2024-07-02T02:25:39.295351+03:00"
