@@ -1,8 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: auth-server
+  name: auth-server-staging
   namespace: argocd
+  labels:
+    example.org/environment: staging
 spec:
   project: default
   source:
