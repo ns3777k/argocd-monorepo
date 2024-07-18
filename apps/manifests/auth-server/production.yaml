@@ -11,6 +11,9 @@ spec:
     repoURL: https://github.com/ns3777k/argocd-monorepo
     targetRevision: HEAD
     path: apps/charts/auth-server/production
+    helm:
+      valuesObject:
+        nameOverride: auth-server-production
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
