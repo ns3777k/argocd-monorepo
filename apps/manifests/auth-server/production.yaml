@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: auth-server-production
+  namespace: argocd
+  labels:
+    example.org/environment: production
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/ns3777k/argocd-monorepo
+    targetRevision: HEAD
+    path: apps/charts/auth-server/production
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd
+  syncPolicy:
+    automated: {}
