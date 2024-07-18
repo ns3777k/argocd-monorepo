@@ -16,3 +16,5 @@ spec:
     namespace: auth-server-production
   syncPolicy:
     automated: {}
+    syncOptions:
+      - CreateNamespace=true

@@ -16,3 +16,5 @@ spec:
     namespace: auth-server-staging
   syncPolicy:
     automated: {}
+    syncOptions:
+      - CreateNamespace=true
