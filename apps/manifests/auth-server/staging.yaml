@@ -11,11 +11,8 @@ spec:
     repoURL: https://github.com/ns3777k/argocd-monorepo
     targetRevision: HEAD
     path: apps/charts/auth-server/staging
-    helm:
-      valuesObject:
-        nameOverride: auth-server-staging
   destination:
     server: https://kubernetes.default.svc
-    namespace: argocd
+    namespace: auth-server-staging
   syncPolicy:
     automated: {}
